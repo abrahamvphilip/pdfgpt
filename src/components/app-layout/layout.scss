@@ -1,0 +1,8 @@
+@use "../../styles/config.scss" as *;
+@use "../../styles/base.scss" as *;
+
+.layout {
+	display: block;
+
+	min-height: 100vh;
+}

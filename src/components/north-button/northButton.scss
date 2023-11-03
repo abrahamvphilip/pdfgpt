@@ -1,0 +1,98 @@
+@use "../../styles/config.scss" as *;
+
+.northButton {
+	display: flex;
+	flex-direction: column;
+
+	gap: 1.25rem;
+
+	text-decoration: none;
+	color: $color-font-black;
+
+	cursor: pointer;
+
+	font-family: var(--ave);
+	font-weight: 800;
+
+	width: fit-content;
+
+	span {
+		font-size: 0.875rem;
+	}
+
+	&-container {
+		display: inline-flex;
+
+		align-items: center;
+		justify-content: flex-start;
+
+		gap: 0.25rem;
+
+		position: relative;
+
+		font-family: var(--ave);
+		font-size: 0.875rem;
+
+		line-height: 1.5;
+		font-weight: 800;
+
+		color: $color-font-black;
+
+		cursor: pointer;
+		opacity: 1;
+	}
+	&-icon {
+		display: flex;
+
+		align-items: center;
+		justify-content: center;
+
+		margin-right: 0.25rem;
+		svg {
+			width: 12px;
+			height: 12px;
+		}
+
+		path {
+			fill: $color-lightgray;
+		}
+	}
+}
+
+.northButton-content {
+	display: inline-flex;
+	flex-direction: row;
+
+	align-items: center;
+
+	position: relative;
+
+	z-index: 2;
+
+	height: 100%;
+
+	overflow: hidden;
+
+	margin-left: 0px;
+	padding: 2px 0;
+
+	&__block {
+		position: absolute;
+
+		inset: 0;
+
+		z-index: 0;
+
+		background: rgba(0, 0, 0, 0.075);
+
+		transform: translate(-103%, 0px);
+	}
+
+	&__menu {
+		display: block;
+
+		padding-right: 24px;
+
+		transform: translate(0px, 0px);
+	}
+}

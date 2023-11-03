@@ -1,0 +1,5 @@
+@use "../../styles/config.scss" as *;
+
+.segment {
+  @include segment;
+}

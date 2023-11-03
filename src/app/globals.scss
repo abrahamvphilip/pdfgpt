@@ -1,0 +1,16 @@
+@use '../styles/config.scss' as *;
+
+* {
+	overscroll-behavior: none;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	font-family: $font-heading;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	.c-scrollbar {
+		display: none;
+	}
+}
