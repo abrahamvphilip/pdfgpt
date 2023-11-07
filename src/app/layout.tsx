@@ -5,7 +5,7 @@ import { ibm } from '../lib/fonts';
 import Providers from './_trpc/providers';
 
 export const metadata = {
-	title: 'OPENVERIZON® OS',
+	title: 'pdfGPT',
 	description:
 		'An exceptionally advanced starter template, designed for large-scale, industry-leading applications and startups under Vincent Holdings.',
 };
