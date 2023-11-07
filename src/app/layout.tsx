@@ -1,5 +1,3 @@
-import { ClerkProvider } from '@clerk/nextjs';
-
 import Layout from '../components/app-layout/layout';
 import './globals.scss';
 
@@ -18,14 +16,12 @@ interface IRootLayoutProps {
 
 export default function RootLayout({ children }: IRootLayoutProps) {
 	return (
-		<ClerkProvider>
-			<html lang="en">
-				<body className={ibm.variable}>
-					<Providers>
-						<Layout>{children}</Layout>
-					</Providers>
-				</body>
-			</html>
-		</ClerkProvider>
+		<html lang="en">
+			<body className={ibm.variable}>
+				<Providers>
+					<Layout>{children}</Layout>
+				</Providers>
+			</body>
+		</html>
 	);
 }

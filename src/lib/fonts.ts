@@ -1,4 +1,4 @@
-import localFont from "next/font/local";
+import localFont from 'next/font/local';
 
 export const ibm = localFont({
 	src: [
@@ -13,30 +13,3 @@ export const ibm = localFont({
 	],
 	variable: '--ibm',
 });
-
-// export const ave = localFont({
-// 	src: [
-// 		{
-// 			path: '..//assets/fonts/avenir/Avenir-Light.woff2',
-// 			weight: '300',
-// 		},
-// 		{
-// 			path: '..//assets/fonts/avenir/Avenir-Book.woff2',
-// 			weight: '400',
-// 		},
-// 		{
-// 			path: '..//assets/fonts/avenir/Avenir-BookOblique.woff2',
-// 			weight: '400',
-// 			style: 'oblique',
-// 		},
-// 		{
-// 			path: '..//assets/fonts/avenir/Avenir-Medium.woff2',
-// 			weight: '500',
-// 		},
-// 		{
-// 			path: '..//assets/fonts/avenir/Avenir-Black.woff2',
-// 			weight: '800',
-// 		},
-// 	],
-// 	variable: '--ave',
-// });
