@@ -1,0 +1,48 @@
+@use '@/src/styles/config.scss' as *;
+
+.hero {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+
+	gap: 1.25rem;
+
+	&--header {
+		@include grid-col(8);
+
+		@include heading();
+
+		margin: 0 auto;
+		text-align: center;
+
+		span {
+			color: blue;
+			font-weight: bold;
+		}
+	}
+	&--description {
+		@include grid-col(8);
+
+		@include copy();
+
+		margin: 0 auto;
+		text-align: center;
+	}
+	&--button {
+		width: fit-content;
+
+		gap: 12px;
+		margin: 0 auto;
+
+		outline: none;
+
+		text-decoration: none;
+
+		color: inherit;
+	}
+	&--arrowRight {
+		width: 14px;
+		height: 14px;
+	}
+}
