@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import Segment from '../components/segment/segment';
 
+import Link from 'next/link';
 import { Button } from '../components/button/button';
 import './globals.scss';
 
@@ -13,8 +14,10 @@ async function Page() {
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
 					suscipit?
 				</p>
-				<Button variant="default" size="lg">
-					Click me Bitch!
+				<Button asChild variant="link" size="lg">
+					<Link href="https://osenorth.co" target="_blank">
+						Click me Bitch!
+					</Link>
 				</Button>
 
 				<ArrowRight />
