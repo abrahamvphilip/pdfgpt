@@ -6,18 +6,19 @@
 
 	justify-content: center;
 
-	gap: 1.25rem;
+	gap: 2rem;
 
 	&--header {
 		@include grid-col(8);
 
 		@include heading();
+		color: var(--primary);
 
 		margin: 0 auto;
 		text-align: center;
 
 		span {
-			color: blue;
+			color: hsl(221.2 83.2% 53.3%);
 			font-weight: bold;
 		}
 	}
@@ -26,13 +27,18 @@
 
 		@include copy();
 
+		color: var(--muted-foreground);
+
 		margin: 0 auto;
 		text-align: center;
 	}
 	&--button {
+		@include tags();
+		font-weight: 700;
+
 		width: fit-content;
 
-		gap: 12px;
+		gap: 0.75rem;
 		margin: 0 auto;
 
 		outline: none;
@@ -40,9 +46,13 @@
 		text-decoration: none;
 
 		color: inherit;
+
+		box-shadow: none;
+
+		box-shadow: 0 8px 12px 0px rgba(0, 0, 0, 0.075);
 	}
 	&--arrowRight {
-		width: 14px;
-		height: 14px;
+		width: 0.875rem;
+		height: 0.875rem;
 	}
 }

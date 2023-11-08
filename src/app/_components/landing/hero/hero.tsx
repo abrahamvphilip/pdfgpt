@@ -15,9 +15,10 @@ export const Hero = () => {
 						to chat with!
 					</h1>
 					<p className="hero--description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse
-						accusantium mollitia saepe quo, architecto, quia repellat animi
-						veritatis molestias provident facilis officiis optio inventore.
+						Welcome to pdfGPT, where you chat with your docs so you don&apos;t
+						feel like a loser (you are though!). We&apos;re like the sexy
+						librarian of the tech world - we&apos;ve got the brains, the looks,
+						and we&apos;re not afraid to get down and dirty with your Docs.
 					</p>
 					<Button asChild variant="outline" size="lg" className="hero--button">
 						<Link href="/dashboard">
